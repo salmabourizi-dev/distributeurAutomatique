@@ -1,0 +1,58 @@
+.transaction-display {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.balance-display, .selected-products, .change-display {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.balance-display:not(:last-child), 
+.selected-products:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.amount {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2196f3;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.selected-products ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.selected-products li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.selected-products li:last-child {
+  border-bottom: none;
+}
+
+.total {
+  margin-top: 0.5rem;
+  text-align: right;
+  font-weight: bold;
+}
+
+.change-display .amount {
+  color: #4caf50;
+}

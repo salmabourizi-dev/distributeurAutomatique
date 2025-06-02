@@ -1,0 +1,93 @@
+.coin-insertion {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.coin-insertion h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.coin-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.coin-button {
+  background-color: #ffd700;
+  border: 2px solid #e6c300;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 0 auto;
+}
+
+.coin-button:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.coin-button:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.coin-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Different colors for different coin values */
+.coin-button:nth-child(1) {
+  background-color: #cd7f32; /* Bronze */
+  border-color: #b36a27;
+}
+
+.coin-button:nth-child(2) {
+  background-color: #cd7f32; /* Bronze */
+  border-color: #b36a27;
+}
+
+.coin-button:nth-child(3) {
+  background-color: #b0b0b0; /* Silver */
+  border-color: #999999;
+}
+
+.coin-button:nth-child(4) {
+  background-color: #b0b0b0; /* Silver */
+  border-color: #999999;
+}
+
+.coin-button:nth-child(5) {
+  background-color: #ffd700; /* Gold */
+  border-color: #e6c300;
+}
+
+.coin-button:nth-child(6) {
+  background-color: #ffd700; /* Gold */
+  border-color: #e6c300;
+}
+
+@media (max-width: 768px) {
+  .coin-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .coin-button {
+    height: 60px;
+    width: 60px;
+    font-size: 0.9rem;
+  }
+}

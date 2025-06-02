@@ -1,0 +1,54 @@
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.action-buttons button {
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.action-buttons button:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.action-buttons button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.action-buttons button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.complete-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.complete-button:hover:not(:disabled) {
+  background-color: #388e3c;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.cancel-button:hover:not(:disabled) {
+  background-color: #d32f2f;
+}
+
+.new-transaction-button {
+  background-color: #2196f3;
+  color: white;
+}
+
+.new-transaction-button:hover:not(:disabled) {
+  background-color: #1976d2;
+}
